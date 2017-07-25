@@ -1,0 +1,11 @@
+calculator:
+    path: /calculator
+    methods: GET
+    defaults: { _controller: 'AppBundle:Default:index' }
+
+calculator-answer:
+    path: /calculator
+    methods: POST
+    defaults: { _controller: 'AppBundle:Default:index' }
+
+

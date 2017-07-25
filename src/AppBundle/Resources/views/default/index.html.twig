@@ -1,0 +1,45 @@
+{% block head %}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ asset('js/calculator.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+
+
+
+    {{ form_start(form) }}
+    <div class="divTable">
+        <div class="divRow">
+            <div class="divCell"><span>{{ form_widget(form.one) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.two) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.three) }}</span></div>
+        </div>
+        <div class="divRow">
+            <div class="divCell"><span>{{ form_widget(form.four) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.five) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.six) }}</span></div>
+        </div>
+        <div class="divRow">
+            <div class="divCell"><span>{{ form_widget(form.seven) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.eight) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.nine) }}</span></div>
+        </div>
+        <div class="divRow">
+            <div class="divCell"><span>{{ form_widget(form.zero) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.equals) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.add) }}</span></div>
+        </div>
+        <div class="divRow">
+            <div class="divCell"><span>{{ form_widget(form.minus) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.divid) }}</span></div>
+            <div class="divCell"><span>{{ form_widget(form.times) }}</span></div>
+        </div>
+        <div class="divRow">
+            <div class="div">{{ form_widget(form.sum) }} = {{ answer }}</div>
+
+        </div>
+    </div>
+    {{ form_end(form) }}
+
+{% endblock %}

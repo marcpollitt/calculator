@@ -1,0 +1,25 @@
+.divTable {
+    display: table;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #666666;
+    border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.divRow {
+    display: table-row;
+    width: auto;
+    clear: both;
+}
+.divCell {
+    float: left; /* fix for  buggy browsers */
+    display: table-column;
+    width: 30px;
+    background-color: #ccc;
+}
+
+text
+{
+    margin-left:auto;
+    margin-right:auto;
+    width:90px;
+}
